@@ -1,27 +1,60 @@
-@import 'https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-/* Custom Tailwind CSS classes for a bright, clean, and simple personal website */
-
+/* Custom styles */
 .container {
   @apply mx-auto max-w-md px-4;
 }
 
 .header {
-  @apply text-3xl font-bold text-center py-4;
+  @apply text-2xl font-bold my-4;
 }
 
-.section {
+.nav {
+  @apply flex justify-between items-center py-4;
+}
+
+.nav-item {
+  @apply text-lg font-semibold;
+}
+
+.main-content {
   @apply my-8;
 }
 
-.section-title {
-  @apply text-2xl font-semibold mb-2;
+.project-section {
+  @apply grid grid-cols-1 gap-4 md:grid-cols-2;
 }
 
-.section-content {
-  @apply text-base leading-relaxed;
+.project-card {
+  @apply rounded-lg overflow-hidden shadow-lg;
+}
+
+.project-image {
+  @apply w-full h-64 object-cover;
+}
+
+.project-title {
+  @apply text-xl font-bold mt-4;
+}
+
+.project-description {
+  @apply text-base my-2;
 }
 
 .footer {
   @apply text-center py-4;
+}
+
+@media (min-width: 768px) {
+  .container {
+    @apply max-w-lg;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    @apply max-w-xl;
+  }
 }

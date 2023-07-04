@@ -1,15 +1,13 @@
-1. "index.html": This is the main HTML file that will contain the structure of the website. It will link to the "styles.css" and "tailwind.css" files for styling. It will contain various DOM elements with unique id names that can be targeted by JavaScript functions (if any are added in the future).
+1. HTML Structure: Both "index.html" and "projects.html" will share a similar HTML structure, including header, footer, and navigation bar. 
 
-2. "styles.css": This is the main CSS file that will contain custom styles for the website. It will use class and id selectors that correspond to those in the "index.html" file. It will also import the "tailwind.css" file to use Tailwind CSS classes.
+2. CSS Classes: The "styles.css" and "tailwind.css" files will contain CSS classes that are used across both HTML files. These may include classes for styling the header, footer, navigation bar, and main content area.
 
-3. "tailwind.css": This is the CSS file for Tailwind CSS, a utility-first CSS framework. It will be imported into the "styles.css" file and its classes will be used in the "index.html" file.
+3. Tailwind CSS: Both HTML files will use the Tailwind CSS framework for styling, which is defined in the "tailwind.css" file. 
 
-Shared Dependencies:
+4. DOM Elements: Both HTML files will contain DOM elements with unique id names that can be targeted by JavaScript functions. These may include ids for the navigation bar, main content area, and individual project sections.
 
-1. DOM Element IDs: These are unique identifiers for elements in the "index.html" file that can be targeted by CSS for styling. They are shared between the "index.html" and "styles.css" files.
+5. Shared Assets: Both HTML files may use shared assets such as images, fonts, and icons, which would be defined in the CSS files.
 
-2. CSS Class Names: These are identifiers for styling rules in the "styles.css" and "tailwind.css" files. They are shared between the "index.html", "styles.css", and "tailwind.css" files.
+6. Responsive Design: The CSS files will contain media queries to ensure the design is responsive and looks good on all device sizes. These media queries will be used across both HTML files.
 
-3. CSS Import: The "tailwind.css" file is imported into the "styles.css" file, making it a shared dependency.
-
-4. Link to CSS files: The "index.html" file will have links to the "styles.css" and "tailwind.css" files, making them shared dependencies.
+7. Linking: Both HTML files will link to the "styles.css" and "tailwind.css" files in their head sections to apply the CSS styles.
